@@ -1,0 +1,10 @@
+<h1> Welcome To The Octothorpes Potluck </h1>
+
+<h2>Here are the students taking part:</h2>
+<ul>
+  <% @students.each do |student| %>
+<li>
+<%= link_to student.name, student_path(student) %>
+</li>
+</ul>
+<% end %>
